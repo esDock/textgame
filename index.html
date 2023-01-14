@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <title>Text Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+
+  <body>
+
+
+    <!-- Main Container For Game. Includes All 4 Windows -->
+    <div sytle="display:flex" class="container">
+
+        <!-- Contains Left side of Screen -->
+        <div class="container__left">
+
+            <!-- Contains Left Top Screen -->
+            <div class="lcontainer__top" >
+                
+                Game Window
+
+
+            </div>
+            
+            <!-- The Left Verticle Bar To Adjust Windows  -->
+            <div class="resizer" data-direction="vertical" id="toggle"> </div>
+
+            <!-- Contains Left Bottom Screen -->
+            <div class="lcontainer__bottom">
+
+                Options (Save, load, restart, etc)
+                <!-- <input onclick="change()" type="button" value="Resize Enabled" id="button"></input> -->
+
+            </div>
+
+        </div>
+
+        <!-- The Horizontal Bar To Adjust Windows -->
+        <div class="resizer" data-direction="horizontal" id="toggle"></div>
+
+        <!-- Contains Right Side of Screen -->
+        <div class="container__right">
+
+            <!-- Constains Top Right Screen -->
+            <div class="container__top" >
+                
+                Player Stats Window
+
+            </div>
+
+            <!-- The Right Verticle Bar To Adjust Windows  -->
+            <div class="resizer" data-direction="vertical" id="toggle"></div>
+
+            <!-- Contains Right Bottom Screen -->
+            <div class="container__bottom">
+                
+                Inventory
+            
+            </div>
+
+        </div>
+
+    </div>
+    <!-- not Needed right now -->
+    <!-- <script src="resizer/resize.js"></script> -->
+  </body>
