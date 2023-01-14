@@ -16,24 +16,34 @@
 
 
     <!-- Main Container For Game. Includes All 4 Windows -->
-    <div sytle="display:flex" class="container">
+    <div sytle="display:flex" id="container">
 
         <!-- Contains Left side of Screen -->
-        <div class="container__left">
+        <div id="containerLeft">
 
             <!-- Contains Left Top Screen -->
-            <div class="lcontainer__top" >
+            <div id="containerLeftTop" class="parent" >
                 
                 Game Window
 
+                <div id="gameButton" class="child"> 
 
-            </div>
+                    <button class="gameButtons">Option 1</button>
+                    <button class="gameButtons">Option 2</button>
+                    <button class="gameButtons">Option 3</button>
+                    <button class="gameButtons">Option 4</button>
+                    <button class="gameButtons">Option 5</button>
+                    <button class="gameButtons">Option 6</button>
+                    
+                </div>
+                
+            </div> 
             
             <!-- The Left Verticle Bar To Adjust Windows  -->
-            <div class="resizer" data-direction="vertical" id="toggle"> </div>
+            <div class="resizer" data-direction="vertical"> </div>
 
             <!-- Contains Left Bottom Screen -->
-            <div class="lcontainer__bottom">
+            <div id="containerLeftBottom">
 
                 Options (Save, load, restart, etc)
                 <!-- <input onclick="change()" type="button" value="Resize Enabled" id="button"></input> -->
@@ -43,23 +53,94 @@
         </div>
 
         <!-- The Horizontal Bar To Adjust Windows -->
-        <div class="resizer" data-direction="horizontal" id="toggle"></div>
+        <div class="resizer" data-direction="horizontal"></div>
 
         <!-- Contains Right Side of Screen -->
-        <div class="container__right">
+        <div id="containerRight">
 
             <!-- Constains Top Right Screen -->
-            <div class="container__top" >
+            <!-- Top Right Screen Is Dedicated To Player Info -->
+            <div id="containerRightTop" >
                 
-                Player Stats Window
+                <section id="playerStats">
+
+                    <div class="playerCol">
+                        Player
+                    </div>
+                    
+                    <div class="playerCol">
+
+                        <section class="playerRow">
+
+                            <div class="playerRow">
+                                Name
+                            </div>
+    
+                            <div class="playerRow">
+                                Dock
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <div class="playerCol">
+
+                        <section class="playerRow">
+
+                            <div class="playerRow">
+                                Health
+                            </div>
+    
+                            <div class="playerRow">
+                                100
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                    <div class="playerCol">
+
+                        <section class="playerRow">
+
+                            <div class="playerRow">
+                                Stength
+                            </div>
+    
+                            <div class="playerRow">
+                                10
+                            </div>
+                        </section>
+
+                    </div>
+
+                    <div class="playerCol">
+
+                        <section class="playerRow">
+
+                            <div class="playerRow">
+                                Intelligence
+                            </div>
+    
+                            <div class="playerRow">
+                                10
+                            </div>
+
+                        </section>
+
+                        
+
+                    </div>
+
+                </section>
 
             </div>
 
             <!-- The Right Verticle Bar To Adjust Windows  -->
-            <div class="resizer" data-direction="vertical" id="toggle"></div>
+            <div class="resizer" data-direction="vertical"></div>
 
             <!-- Contains Right Bottom Screen -->
-            <div class="container__bottom">
+            <div id="containerRightBottom">
                 
                 Inventory
             
